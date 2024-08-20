@@ -1,0 +1,50 @@
+.image-container {
+    width: 100%; /* Задает ширину контейнера 100% от родительского элемента */
+    overflow: hidden; /* Скрывает часть изображения, выходящую за пределы контейнера */
+}
+h1{
+    color: red;
+}
+.image-container img {
+    width: 100%; /* Изображение занимает 100% ширины контейнера */
+    height: auto; /* Высота автоматически подстраивается для сохранения пропорций */
+    border-radius: 20px ;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    opacity: 80%;
+
+}
+.my-btn2 {
+    border-radius: 7px;
+    color: white;
+    box-shadow: 0 0 0 2px;
+    background-color: #AC9063;
+    border: none;
+    height: 40px;
+    box-sizing: border-box;
+    width: 300px;
+}
+.my-btn2:before{
+    background-color: forestgreen;
+}
+.main_cls{
+    border: none;
+    border-radius: 7px;
+}
+.wid-mx {
+    width: 100%; /* Задает ширину элемента на 100% от родительского контейнера */
+
+    height: auto; /* Высота автоматически подстраивается, если это необходимо */
+    box-sizing: border-box; /* Учитывает отступы и границы в общей ширине */
+    background-size: cover;
+}
+@media (max-width: 768px) {
+    .col {
+        margin-top: 5px; /* Уменьшение отступа для меньших экранов */
+    }
+}

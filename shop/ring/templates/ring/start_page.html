@@ -1,0 +1,105 @@
+{% extends 'ring/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--<h1 >Wikijewels -
+    искусство можно носить</h1>-->
+<div class="image-container">
+<center><img src={% static "ring/fon.jpg" %}></center>
+</div>
+
+
+
+<div class="container" style="height: 100px; background-color: aquamarine; width: max-content"> Краткое описание</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="carouselExampleIndicators " class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+<div class="container-fluid wid-mx">
+  <div class="row">
+    <div class="col" style="margin-top: 10px">
+<center><img class="main_cls" src="{% static "ring/photo_sergi/sergi_photo.jpg" %}" width="300" height="280"></center>
+        <center><h5>Серьги</h5>
+        <button class="my-btn2">В каталог	&rarr;</button></center>
+    </div>
+    <div class="col" style="margin-top: 10px">
+        <center><img class="main_cls" src="{% static "ring/photo_kolye/photo_kolye.jpg" %}" width="300" height="280"></center>
+
+      <center><h5>Колье</h5>
+                <button class="my-btn2">В каталог	&rarr;</button></center>
+
+    </div>
+    <div class="col" style="margin-top: 10px">
+        <center><img class="main_cls" src="{% static "ring/photo_braslets/photo_braslet.jpg" %}" width="300" height="280"></center>
+
+      <center><h5>Браслеты</h5>
+                <button class="my-btn2">В каталог	&rarr;</button></center>
+
+    </div>
+      <div class="col" style="margin-top: 10px">
+        <center><img class="main_cls" src="{% static "ring/photo_ring/photo_ring.jpeg" %}" width="300" height="280"></center>
+
+          <center><h5>Кольца</h5>
+                  <button class="my-btn2">В каталог	&rarr;</button></center>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container" style="height: 100px"> Отзывы ффффффф</div>
+<div class="container" style="height: 100px"> Контакты </div>
+
+
+
+
+
+
+{% endblock %}
