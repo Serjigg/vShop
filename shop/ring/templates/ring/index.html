@@ -1,0 +1,18 @@
+{% extends 'mebel/base.html' %}
+
+{% block content %}
+<ul class="list-articles">
+	{% for p in post %}
+			<li><h2>{{p.divan}}</h2>
+	{% autoescape on %}
+	{{p.creslo|linebreaks|truncatewords:50}}
+	{% endautoescape %}
+			<div class="clear"></div>
+			<p class="link-read-post"><a href="#">Читать пост</a></p>
+
+			</li>
+	{% endfor %}
+
+	<h1>asddd</h1>
+</ul>
+{% endblock %}
